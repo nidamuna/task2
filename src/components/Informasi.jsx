@@ -75,8 +75,8 @@ const Informasi = () => {
             <h1 className=" mt-[91px] mb-[38px] text-[27px] font-semibold text-black text-right">
               Berita Lainnya
             </h1>
-            <div className="overflow-y-scroll grid-cols-1 col-span-5 h-[540px]">
-              <div className="bg-card1-image bg-full bg-right bg-no-repeat w-[392px] h-[279px] drop-shadow-[5px_5px_5px_rgba(0,0,0,0.25)] rounded-2xl">
+            <div className="overflow-y-scroll flex flex-col h-[540px]">
+              <div className="mb-8 bg-card1-image bg-full bg-right bg-no-repeat w-[392px] h-[279px] drop-shadow-[5px_5px_5px_rgba(0,0,0,0.25)] rounded-2xl">
                 <div className="bg-shadow-image bg-full bg-right bg-no-repeat w-[392px] h-[279px]">
                   <div className="w-[337px] h-[48px] text-white ml-5 pt-[150px]">
                     <h1 className="text-[20px] font-semibold">
@@ -97,7 +97,7 @@ const Informasi = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-card2-image bg-full bg-right bg-no-repeat w-[392px] h-[279px] drop-shadow-[5px_5px_5px_rgba(0,0,0,0.25)] rounded-2xl">
+              <div className="mb-8 bg-card2-image bg-full bg-right bg-no-repeat w-[392px] h-[279px] drop-shadow-[5px_5px_5px_rgba(0,0,0,0.25)] rounded-2xl">
                 <div className="bg-shadow-image bg-full bg-right bg-no-repeat w-[392px] h-[279px]">
                   <div className="w-[337px] h-[48px] text-white ml-5 pt-[150px]">
                     <h1 className="text-[20px] font-semibold">
