@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import profile from '../assets/profile.png';
+import Edit from './Modalpenilaian.jsx';
 
 const Penilaian = () => {
+  const [showEdit, setShowEdit] = useState(false);
+  const handleOnClose = () => setShowEdit(false);
   return (
     <div>
       <Sidebar />
@@ -137,7 +140,10 @@ const Penilaian = () => {
           <div className="w-[427px] h-[471px] rounded-2xl drop-shadow-xl bg-white">
             <div className="flex flex-row bg-[#B9E0D9] w-full rounded-t-2xl">
               <div className="h-[78px] w-[78px] my-5 ml-9">
-                <img src={profile} alt="/" />
+                <button onClick={() => setShowEdit(true)}>
+                  <img src={profile} alt="/" />
+                </button>
+                <Edit onClose={handleOnClose} visible={showEdit} />
               </div>
               <div className="flex flex-col my-5 ml-3">
                 <h1 className="uppercase  text-[24px] font-semibold text-[#000850]">
