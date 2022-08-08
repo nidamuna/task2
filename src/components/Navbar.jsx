@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../assets/profile.png';
+import Foto from './Fotoprofile.jsx';
 
 const Navbar = () => {
   return (
@@ -17,8 +17,8 @@ const Navbar = () => {
           XII IPA 1
         </p>
       </div>
-      <div className="pt-[52px] ml-5 mr-0">
-        <img src={profile} alt="/" />
+      <div className="pt-[52px] ml-5 mr-0 w-[78px] h-[78px]">
+        <Foto />
       </div>
     </div>
   );
